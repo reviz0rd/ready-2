@@ -1,0 +1,484 @@
+map = game:GetService("Workspace").Map
+inv = game:GetService("Players").LocalPlayer.INVENTORY
+plr = game:GetService("Players").LocalPlayer
+skins = inv.Skins
+primary = inv.Primary
+secondary = inv.Secondary
+mnt = inv.Mount
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/batusz/uilibrarys/main/kavo_ui_lib"))()
+local Window = Library.CreateLib("Ready 2 Hub v1.0.1 Beta", "Synapse")
+
+
+
+
+
+local Tab = Window:NewTab("Item Spawn")
+local Section = Tab:NewSection("Default Skincrate")
+
+
+
+
+
+
+Section:NewButton("Spawn M249", "Unbox a skin to equip the item.", function()
+    skins.M249.Parent = primary
+end)
+Section:NewButton("Spawn Flag", "Unbox a skin to equip the item.", function()
+    skins.Flag.Parent = secondary
+end)
+Section:NewButton("Spawn Peacemakers", "Unbox a skin to equip the item.", function()
+    skins.Peacemaker.Parent = secondary
+end)
+Section:NewButton("Spawn P90", "Unbox a skin to equip the item.", function()
+    skins.P90.Parent = primary
+end)
+Section:NewButton("Spawn Toysword", "Unbox a skin to equip the item.", function()
+    skins.Toysword.Parent = secondary
+end)
+Section:NewButton("Spawn Cheesecat Mount", "Unbox a skin to equip the item.", function()
+    skins.Cheesecat.Parent = mnt
+end)
+Section:NewButton("Spawn Jetski Mount", "Unbox a skin to equip the item.", function()
+    skins.Jetski.Parent = mnt
+end)
+Section:NewButton("Spawn Honeybadger", "Unbox a skin to equip the item.", function()
+    skins["AAC Honeybadger"].Parent = primary
+end)
+Section:NewButton("Spawn AK-47", "Unbox a skin to equip the item.", function()
+    skins["AK-47"].Parent = primary
+end)
+Section:NewButton("Spawn M4A1", "Unbox a skin to equip the item.", function()
+    skins.M4A1.Parent = primary
+end)
+Section:NewButton("Spawn Winchester", "Unbox a skin to equip the item.", function()
+    skins.Winchester.Parent = primary
+end)
+Section:NewButton("Spawn Flamethrower", "Unbox a skin to equip the item.", function()
+    skins.Flamethrower.Parent = primary
+end)
+Section:NewButton("Spawn Dragunov", "Unbox a skin to equip the item.", function()
+    skins.Dragunov.Parent = primary
+end)
+Section:NewButton("Spawn Thompson", "Unbox a skin to equip the item.", function()
+    skins.Thompson.Parent = primary
+end)
+Section:NewButton("Spawn Minigun", "Unbox a skin to equip the item.", function()
+    skins.Minigun.Parent = primary
+end)
+Section:NewButton("Spawn Famas", "Unbox a skin to equip the item.", function()
+    skins.Famas.Parent = primary
+end)
+Section:NewButton("Spawn Spas-12", "Unbox a skin to equip the item.", function()
+    skins["Spas-12"].Parent = primary
+end)
+Section:NewButton("Spawn Chinalake", "Unbox a skin to equip the item.", function()
+    skins.Chinalake.Parent = primary
+end)
+Section:NewButton("Spawn Barrett 50Cal", "Unbox a skin to equip the item.", function()
+    skins["Barrett 50c"].Parent = primary
+end)
+Section:NewButton("Spawn SCAR-H", "Unbox a skin to equip the item.", function()
+    skins["SCAR-H"].Parent = primary
+end)
+Section:NewButton("Spawn Dualies", "Unbox a skin to equip the item.", function()
+    skins.Dualies.Parent = secondary
+end)
+Section:NewButton("Spawn M1911", "Unbox a skin to equip the item.", function()
+    skins["M1911"].Parent = secondary
+end)
+Section:NewButton("Spawn MP5", "Unbox a skin to equip the item.", function()
+    skins.MP5.Parent = secondary
+end)
+Section:NewButton("Spawn M202", "Unbox a skin to equip the item.", function()
+    skins.M202.Parent = secondary
+end)
+Section:NewButton("Spawn Rambo", "Unbox a skin to equip the item.", function()
+    skins.Rambo.Parent = secondary
+end)
+Section:NewButton("Spawn Shotty 12", "Unbox a skin to equip the item.", function()
+    skins["Shotty 12"].Parent = secondary
+end)
+Section:NewButton("Spawn Spear", "Unbox a skin to equip the item.", function()
+    skins["Spear"].Parent = secondary
+end)
+Section:NewButton("Spawn Karambit", "Unbox a skin to equip the item.", function()
+    skins["Karambit"].Parent = secondary
+end)
+Section:NewButton("Spawn Chainsaw", "Unbox a skin to equip the item.", function()
+    skins.Chainsaw.Parent = secondary
+end)
+Section:NewButton("Spawn Dual Daggers", "Unbox a skin to equip the item.", function()
+    skins["Dual Daggers"].Parent = secondary
+end)
+Section:NewButton("Spawn RPG", "Unbox a skin to equip the item.", function()
+    skins.RPG.Parent = secondary
+end)
+Section:NewButton("Spawn Katana", "Unbox a skin to equip the item.", function()
+    skins.Katana.Parent = secondary
+end)
+Section:NewButton("Spawn Luger P08", "Unbox a skin to equip the item.", function()
+    skins["Luger P08"].Parent = secondary
+end)
+Section:NewButton("Spawn CK Swat", "Unbox a skin to equip the item.", function()
+    skins["CK Swat"].Parent = secondary
+end)
+Section:NewButton("Spawn Mini Uzi", "Unbox a skin to equip the item.", function()
+    skins["Mini Uzi"].Parent = secondary
+end)
+Section:NewButton("Spawn Pumpkin Bot", "Unbox a skin to equip the item.", function()
+    skins["Pumpkin Bot"].Parent = mnt
+end)
+Section:NewButton("Spawn Ice Rhino", "Unbox a skin to equip the item.", function()
+    skins["Ice Rhino"].Parent = mnt
+end)
+Section:NewButton("Spawn Bat", "Unbox a skin to equip the item.", function()
+    skins["Baseball Bat"].Parent = secondary
+end)
+
+
+
+
+
+
+
+
+local Section2 = Tab:NewSection("Premium Skincrates")
+
+
+
+
+
+
+
+
+Section:NewButton("Spawn Christmas Sword", "Unbox a skin to equip the item.", function()
+    skins["Christmas Tree"].Parent = secondary
+end)
+Section2:NewButton("Spawn Pillow", "Unbox a skin to equip the item.", function()
+    skins.Pillow.Parent = secondary
+end)
+Section2:NewButton("Spawn Bazooka", "Unbox a skin to equip the item.", function()
+    skins.Bazooka.Parent = secondary
+end)
+
+
+
+
+
+local Section3 = Tab:NewSection("Exclusive Skincrates")
+
+
+
+
+
+
+Section3:NewButton("Spawn Harp", "Unbox a skin to equip the item.", function()
+    skins.Harp.Parent = secondary
+end)
+
+
+
+
+
+
+
+local Section4 = Tab:NewSection("Unavailable Items")
+
+
+
+
+
+
+
+Section4:NewButton("Spawn Autolife Mount (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins.Autolife.Parent = mnt
+end)
+Section4:NewButton("Spawn Raygun (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins.Raygun.Parent = secondary
+end)
+Section4:NewButton("Spawn Bangun (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins.Bangun.Parent = primary
+end)
+Section4:NewButton("Spawn Rocket Sleigh Mount (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins["Rocket Sleigh"].Parent = mnt
+end)
+Section4:NewButton("Spawn Bunny Mount (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins.Bunny.Parent = mnt
+end)
+Section4:NewButton("Spawn ToyPlane Mount (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins["Toy Plane"].Parent = mnt
+end)
+Section4:NewButton("Spawn Mini Crab (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins["Mini Crab"].Parent = primary
+end)
+Section4:NewButton("Spawn FATAL6 (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins["FATAL6"].Parent = primary
+end)
+Section4:NewButton("Spawn EZ-3 (cant equip it, just cool feature)", "You won't be able to equip it until you unbox a skin (none)", function()
+    skins["EZ-3"].Parent = secondary
+end)
+
+
+
+
+local Tab2 = Window:NewTab("Exploits")
+local Section5 = Tab2:NewSection("Hammer Exploits")
+
+
+
+
+
+
+Section5:NewButton("Spawn Platform Up (equip hammer before executing)", "Spawns a platform above the player's head.", function()
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "SteelFence",
+            ["Cframe"] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,0,300)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+end)
+
+
+Section5:NewButton("Spawn Platform Forward (equip hammer before executing)", "Spawns a platform infront of the player's head.", function()
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "SteelFence",
+            ["Cframe"] = game:GetService("Players").LocalPlayer.Character["Left Leg"].CFrame * CFrame.Angles(0,0,300) * CFrame.new(7.75,0,-7.80)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+end)
+
+
+Section5:NewButton("Spawn Platform Down (equip hammer before executing)", "Spawns a platform below the player's head.", function()
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "SteelFence",
+            ["Cframe"] = game:GetService("Players").LocalPlayer.Character["Left Leg"].CFrame * CFrame.Angles(0,0,300) * CFrame.new(17.5,0,-7.8)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+end)
+
+
+--[[Section5:NewButton("Ladder with Sandbags (equip hammer before executing)", "Creates a ladder using sandbags.", function()
+    local randomDistance = 1
+    local randomDistance2 = 1
+    for i = 0,15 do
+    randomDistance += 3
+    randomDistance2 += 1
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "Sandbags",
+            ["Cframe"] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,randomDistance,randomDistance2)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+end)--]]
+
+
+Section5:NewButton("Spawn House (equip hammer before executing)", "Spawns a house within the player's proximity.", function()
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "SteelFence",
+            ["Cframe"] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,0,300)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "SteelFence",
+            ["Cframe"] = CFrame.new(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * -5)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "SteelFence",
+            ["Cframe"] = CFrame.new(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 5)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "SteelFence",
+            ["Cframe"] = CFrame.new(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame.RightVector * 5)  * CFrame.fromEulerAnglesYXZ(300,0,0)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+
+    local args = {
+        [1] = game:GetService("Players").LocalPlayer.Character.Hammer,
+        [2] = "Build",
+        [3] = {
+            ["Name"] = "SteelFence",
+            ["Cframe"] = CFrame.new(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame.RightVector * -5) * CFrame.fromEulerAnglesYXZ(-300,0,0)
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UseItem"):FireServer(unpack(args))
+end)
+
+
+
+
+
+local Section6 = Tab2:NewSection("Survivor Exploits")
+
+
+
+
+
+
+Section6:NewButton("Loop punch all zombies (fists)", "Damages zombies within a reasonable distance.", function()
+    for _, plr in pairs(workspace.Characters.Zombies:GetDescendants()) do
+    local ohInstance1 = plr.Humanoid
+    local ohNumber2 = 1
+
+    game:GetService("ReplicatedStorage").Events.Survivor.PunchAttacked:FireServer(ohInstance1, ohNumber2)
+    end
+end)
+Section6:NewButton("Zombie Immunity", "Protects you from zombie damage.", function()
+    while task.wait(0.5) do
+    game:GetService("ReplicatedStorage").Events.Survivor.PunchAttacked:FireServer()
+    end
+end)
+Section6:NewButton("Remove Snow", "Removes snow.", function()
+    game:GetService("Workspace").Camera.Snow:Destroy()
+end)
+
+
+
+
+
+
+local Section7 = Tab2:NewSection("Melee Smash Exploits")
+
+
+
+
+
+
+
+Section7:NewButton("Damage everybody (FLAG ONLY)", "Damages players within a reasonable distance.", function()
+    local ohInstance1 = workspace.Characters.Survivors.beatshack09["Head"]
+    local ohTable2 = {
+        ["HeadShot"] = true,
+        ["Humanoid"] = workspace.Characters.Survivors.beatshack09.Humanoid,
+        ["Combo"] = 3,
+        ["Weapon"] = workspace.Characters.Survivors.ContPentruRafa.Flag,
+        ["Player"] = game:GetService("Players").beatshack09,
+        ["NoStruggle"] = true
+    }
+
+    workspace.Characters.Survivors.ContPentruRafa.Flag.Slash:FireServer(ohInstance1, ohTable2)
+end)
+
+
+
+
+
+
+local Tab3 = Window:NewTab("Gift Farming")
+local Section8 = Tab3:NewSection("Gift Farming | Blatant")
+
+
+
+
+
+
+
+Section8:NewButton("Teleport to Blue Gift", "Teleports the player to the blue gift.", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Gift of Kindness"].CFrame
+end)
+Section8:NewButton("Teleport to Red Gift", "Teleports the player to the red gift.", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Gift of Life"].CFrame
+end)
+Section8:NewButton("Teleport to Green Gift", "Teleports the player to the green gift.", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Gift of Fortune"].CFrame
+end)
+
+
+
+
+
+
+
+local Section9 = Tab3:NewSection("Gift Farming | Legit")
+
+
+
+
+
+
+
+
+
+Section9:NewButton("Highlight Blue Gift", "Highlights the blue gift.", function()
+    local gok = game:GetService("Workspace").Map["Gift of Kindness"]
+    local hl = Instance.new("Highlight")
+    hl.Parent = gok
+    hl.Adornee = gok
+    hl.DepthMode = Enum.DepthMode.AlwaysOnTop
+    hl.Enabled = true
+    hl.Color3 = Color3.fromRGB(255, 0, 0)
+    hl.OutlineColor = Color3.fromRGB(255, 255, 255)
+    hl.OutlineTransparency = 0
+    hl.Archivable = true
+end)
+Section9:NewButton("Highlight Red Gift", "Highlights the red gift.", function()
+    local gol = game:GetService("Workspace").Map["Gift of Life"]
+    local hl = Instance.new("Highlight")
+    hl.Parent = gol
+    hl.Adornee = gol
+    hl.DepthMode = Enum.DepthMode.AlwaysOnTop
+    hl.Enabled = true
+    hl.Color3 = Color3.fromRGB(255, 0, 0)
+    hl.OutlineColor = Color3.fromRGB(255, 255, 255)
+    hl.OutlineTransparency = 0
+    hl.Archivable = true
+end)
+Section9:NewButton("Highlight Green Gift", "Highlights the green gift.", function()
+    local gof = game:GetService("Workspace").Map["Gift of Fortune"]
+    local hl = Instance.new("Highlight")
+    hl.Parent = gof
+    hl.Adornee = gof
+    hl.DepthMode = Enum.DepthMode.AlwaysOnTop
+    hl.Enabled = true
+    hl.Color3 = Color3.fromRGB(255, 0, 0)
+    hl.OutlineColor = Color3.fromRGB(255, 255, 255)
+    hl.OutlineTransparency = 0
+    hl.Archivable = true
+end)
+
+
+
+
+
+
+
+
+local Tab4 = Window:NewTab("Credits")
+local Section10 = Tab4:NewSection("Credits")
+Section10:NewLabel("Script made by iFrosty & his friend.\n  More Features coming soon!")
+Section10:NewLabel("Also decided to use Kavo UI\n  to bring back some good memories.")
