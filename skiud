@@ -2,7 +2,7 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 
 game.StarterGui:SetCore("SendNotification", {
-    Title = "KimSoi Hub",
+    Title = "KimSi Hub",
     Text = "Success !",
     Duration = 10,
     Icon = "rbxassetid://93005671600086"
@@ -420,7 +420,7 @@ local skills = {
     String = {"Fullbright", "OverheatWhip", "StringKnight", "SixteenBullets"},
     Love = {"CupidsArrows", "BouquetOfPain", "Heartthrob", "Heartstrings", "BlossomWind"},
     Snow = {"SnowAngel", "WinterStorm", "FrostDome", "SnowballCatastrophe"},
-    Quake = {"Fist", "Eruption", "Slam", "IslandShake", "SeaQuake"},
+    Quake = {"Fist", "Eruption", "Slam", "IslandShake", "Seaquake"},
     Gravity = {"Push", "Launch", "Avalanche", "Shoot", "PlanetaryDevastation", "GreatMeteor"},
     Phoenix = {"Fujiazami", "TalonSlam", "PhoenixInferno", "Bluebird", "Transform", "HawkRush"},
     Dragon = {"DragonBreath", "DragonClaw", "Screech", "DracoMeteor", "CrimsonBomb", "Transformation", "Tatsumaki"},
